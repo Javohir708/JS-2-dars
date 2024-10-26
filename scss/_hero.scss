@@ -1,27 +1,61 @@
 .hero {
-    margin-top: 70px;
+    margin-top: 60px;
     .hero__wrapper {
         display: grid;
         grid-template-columns: repeat(2, auto);
         place-items: center;
         .hero__info {
             width: 800px;
+        
             h2 {
                 color: #fff;
                 font-size: 100px;
                 line-height: 100px;
                 margin-bottom: 10px;
+                opacity: 0; // boshida ko'rinmasligi uchun
+                transform: translateY(50px); // pastdan ko'tarilib kiradi
+                animation: fadeInUp 1.5s ease-out forwards; // kirish animatsiyasi
+        
+                // h2 animatsiyasi
+                @keyframes fadeInUp {
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
             }
+        
             p {
                 width: 720px;
                 color: #F7DF1E;
                 font-size: 18px;
                 font-style: italic;
+                opacity: 0;
+                transform: translateY(50px); 
+                animation: fadeInUp 2s ease-out 0.3s forwards; 
+        
+                @keyframes fadeInUp {
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
             }
         }
+        
         .hero__image {
             width: 450px;
             height: 450px;
+            animation: rotate 2s ease-in-out forwards;
+        
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
         }
     }
 }

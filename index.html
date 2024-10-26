@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <link rel="icon" href="./assets/header__logo.png">
+    <!-- AOS CSS kutubxonasi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -72,7 +74,6 @@
         </div>
     </header>
 
-
     <section class="hero">
         <div class="container">
             <div class="hero__wrapper">
@@ -87,16 +88,25 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
-            <div class="about__text">
-                <h2>JavaScript</h2>
-                <p>JavaScript 1995-yilda Netscape kompaniyasi tomonidan ishlab chiqilgan. Uni Brendan Eich yaratgan va dastlab "Mocha" deb nomlangan. Keyinchalik "LiveScript" deb o‘zgartirilgan, ammo Netscape brauzerining yuksalish davrida Java dasturlash tilidan ilhomlanib, til nomini "JavaScript" deb o‘zgartirishgan. 1996-yilda JavaScript ECMAScript standarti bilan rasmiylashtirilib, bugungi kunda veb-saytlar uchun asosiy dasturlash tillaridan biriga aylangan. JavaScript saytlarni dinamik qilish uchun ishlatiladigan asosiy dasturlash tilidir. Saytning dinamikligi deganda, u sahifa yangilanmasdan o‘zgarishlar qilish, foydalanuvchi bilan real vaqtda muloqot qilish va kontentni avtomatik ravishda yangilash imkoniyatlari tushuniladi. JavaScript orqali foydalanuvchi tugmalarni bosganda oynalar ochilishi, shakllardagi ma’lumotlarning tekshirilishi yoki sahifadagi animatsiyalarni boshqarish kabi interaktivlik qo‘shish imkoniyatiga ega bo'ladi.</p>
+            <div class="about__text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <h2 data-aos="zoom-in" data-aos-duration="800">JavaScript</h2>
+                <p data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+                    JavaScript 1995-yilda Netscape kompaniyasi tomonidan ishlab chiqilgan. Uni Brendan Eich yaratgan va dastlab "Mocha" deb nomlangan. Keyinchalik "LiveScript" deb o‘zgartirilgan, ammo Netscape brauzerining yuksalish davrida Java dasturlash tilidan ilhomlanib, til nomini "JavaScript" deb o‘zgartirishgan. 1996-yilda JavaScript ECMAScript standarti bilan rasmiylashtirilib, bugungi kunda veb-saytlar uchun asosiy dasturlash tillaridan biriga aylangan. JavaScript saytlarni dinamik qilish uchun ishlatiladigan asosiy dasturlash tilidir. Saytning dinamikligi deganda, u sahifa yangilanmasdan o‘zgarishlar qilish, foydalanuvchi bilan real vaqtda muloqot qilish va kontentni avtomatik ravishda yangilash imkoniyatlari tushuniladi. JavaScript orqali foydalanuvchi tugmalarni bosganda oynalar ochilishi, shakllardagi ma’lumotlarning tekshirilishi yoki sahifadagi animatsiyalarni boshqarish kabi interaktivlik qo‘shish imkoniyatiga ega bo'ladi.
+                </p>
             </div>
-            <div class="about__image">
+            <div class="about__image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
                 <img src="./assets/about__image.jpg" alt="JS image">
             </div>
         </div>
     </section>
+
+    <!-- AOS JavaScript kutubxonasi -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        // AOSni ishga tushirish
+        AOS.init();
+    </script>
 </body>
 </html>
