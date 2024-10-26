@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <link rel="icon" href="./assets/header__logo.png">
-    <!-- AOS CSS kutubxonasi -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
@@ -74,6 +73,7 @@
         </div>
     </header>
 
+
     <section class="hero">
         <div class="container">
             <div class="hero__wrapper">
@@ -102,10 +102,126 @@
         </div>
     </section>
 
-    <!-- AOS JavaScript kutubxonasi -->
+    <section class="version" data-aos="fade-up">
+    <div class="container">
+        <div class="version__text">
+            <h2 data-aos="fade-right">JavaScript Tarixi va Yangilanishlar</h2>
+            <p data-aos="fade-left">JavaScript dastlabki chiqarilishi 1995-yilda Brendan Eich (Netscape) tomonidan ishlab chiqarilgan. 1997-yilda ES1 versiyasi chiqariladi. Shundan keyin yangi versiyalari ishlab chiqarila boshlaydi:</p>
+            <ul class="version__list">
+                <li data-aos="zoom-in" data-aos-delay="100">
+                    1998 - ES2: Kichik o'zgarishlar va standartni yaxshilash.
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="200">
+                    1999 - ES3: JavaScript'ni kengaytiradigan xususiyatlar kiritildi, masalan, yaxshilangan qatorlar, xatolarni tutish va boshqa metodlar.
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="300">
+                    2009 - ES5: JavaScript'ning eng mashhur versiyalaridan biri. 'Strict mode', JSON qo'llab-quvvatlovi, va yangi metodlar bilan tanish bo'ldi. Bu versiya keng tarqaldi va zamonaviy veb dasturlashda asosiy asos bo'lib xizmat qildi.
+                </li>
+                <li data-aos="zoom-in" data-aos-delay="400">
+                    2015 - ES6 (ES2015): Katta o'zgarishlar, jumladan, let/const, arrow functions, classlar, va modullar kiritildi. Bu versiya JavaScript'ni boshqa zamonaviy dasturlash tillari darajasiga ko'tarishga yordam berdi...
+                </li>
+            </ul>
+            <h2 data-aos="fade-right">
+                Muvaffaqiyatlar 
+            </h2>
+            <ul class="version__list">
+                <li data-aos="fade-up" data-aos-delay="100">
+                    1. Keng Qamrovli Foydalanish: JavaScript veb dasturlash, mobil dasturlar, server tomonidagi dasturlar va hatto ish stoli ilovalarida keng qo'llaniladi. 
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    2. Katta Jamoa: JavaScript rivojlanishi va qo'llab-quvvatlanishiga katta jamoa hissa qo'shmoqda, turli kutubxonalar va ramkalar (masalan, React, Angular, Vue.js) ishlab chiqilmoqda.
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                    3. Doimiy Yangilanishlar: ECMAScript standartlari muntazam ravishda yangilanib, yangi xususiyatlar va sintaksis qo'shiladi. Bu dasturchilarga yanada samarali va qulay ishlash imkonini beradi.
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    4. Muvaffaqiyatli Kutilgan Tizimlar: Node.js, Express.js va boshqa server tomonidagi texnologiyalar JavaScriptni backend dasturlashda mashhur qildi.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="konsol">
+    <div class="container" data-aos="fade-up">
+        <div class="konsol__text">
+            <h2>console.log()</h2>
+            <p>JavaScriptdagi console obyekti brauzer yoki ishlash muhiti bilan o'zaro aloqada bo'lish uchun ishlatiladi, ayniqsa xatolarni izlash, debugging va hodisalarni qayd qilishda yordam beradi. Bu o'zingiz yaratgan kodlar haqida ma'lumot olish uchun juda qulay vosita hisoblanadi</p>
+        </div>
+        <div class="konsol__wrapper">
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="100">
+                <h3>console.log()</h3>
+                <p>Kodlarni test qilish va umumiy ma'lumotlarni chop etish uchun ishlatiladi. Bu kodda turli o'zgaruvchi yoki xabarlarni chop etadi.</p>
+                <h4><i>console.log("Hello, World!");</i></h4>
+                <h4><i>console.log(25 + 5); // Natija: 30</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="200">
+                <h3>console.error()</h3>
+                <p>Xatolik yuz berganda xabar chop etish uchun ishlatiladi. Ko'pincha qizil rangda chiqadi va xatolarni tezroq ko'rishga yordam beradi.</p>
+                <h4><i>console.error("Xatolik yuz berdi!");</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="300">
+                <h3>console.warn()</h3>
+                <p>Ogohlantirishlarni chop etadi, ammo bu xatolik emas. Kodda potentsial xato bo'lishi mumkin bo'lgan joylarni ko'rsatish uchun ishlatiladi.</p>
+                <h4><i>console.warn("Bu faqat ogohlantirish.");</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="400">
+                <h3>console.info()</h3>
+                <p>Ma'lumot sifatida xabar chop etadi. Bu console.log() ga o'xshaydi, lekin ko'pincha faqat ma'lumot uchun ishlatiladi.</p>
+                <h4><i>console.info("Bu umumiy ma'lumot.");</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="500">
+                <h3>console.assert()</h3>
+                <p>Berilgan shart noto'g'ri bo'lsa, xatolik xabarini ko'rsatadi. Shart to'g'ri bo'lsa, hech narsa chiqarmaydi.</p>
+                <h4><i>console.assert(5 > 10, "Bu xabar noto'g'ri bo'lsa chiqadi.");</i></h4>
+            </div>
+            <div class="konsol__card" data-aos="fade-up" data-aos-delay="600">
+                <h3>console.clear()</h3>
+                <p>Konsolni tozalaydi, faqat konsol oynasida bo'sh joy qoldiradi.</p>
+                <h4><i>console.clear();</i></h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="variable" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+        <div class="variable__image" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="./assets/variables.jpg" alt="JS image">
+        </div>
+        <div class="variable__text" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Variable</h2>
+            <p>JavaScriptda o'zgaruvchilar (variables) ma'lumotlarni saqlash uchun ishlatiladi. O'zgaruvchilar yordamida qiymatlarni o'zgartirish va boshqarish mumkin.</p>
+            <ul class="variable__list">
+                <li>1. var: Eski versiyalarda o'zgaruvchilarni e'lon qilish uchun ishlatilgan. O'zgaruvchilarni global yoki funksional doirada yaratadi. Qayta e'lon qilish va qiymatini o'zgartirish mumkin.
+                </li>
+                <li>
+                    <h4>var a = 10;</h4>
+                    <h4>a = 20; // a ning yangi qiymati 20</h4>
+                </li>
+                <li>2. let: ES6 (ECMAScript 2015) dan boshlab kiritilgan. Blok doirasida o'zgaruvchilarni yaratadi, ya'ni faqat e'lon qilingan blok ichida mavjud. Qayta e'lon qilish mumkin emas, ammo qiymatini o'zgartirish mumkin.</li>
+                <li>
+                    <h4>let b = 30;</h4>
+                    <h4>b = 40; // b ning yangi qiymati 40</h4>
+                </li>
+                <li>3. const: ES6 dan kiritilgan. O'zgaruvchi qiymatini bir marta e'lon qilish mumkin va keyinchalik o'zgartirib bo'lmaydi (lekin agar u ob'ekt yoki massiv bo'lsa, uning ichki qiymatlari o'zgartirilishi mumkin).</li>
+                <li>
+                    <h4>const c = 50;</h4>
+                    <h4>// c = 60; // Xato: const o'zgaruvchini o'zgartirib bo'lmaydi</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="operators">
+    <div class="container">
+        
+    </div>
+</section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
-        // AOSni ishga tushirish
         AOS.init();
     </script>
 </body>
