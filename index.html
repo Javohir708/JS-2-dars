@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header">
+    
+    <header class="header" >
         <div class="container">
             <nav class="navbar">
                 <div class="navbar__logo">
@@ -23,37 +24,37 @@
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="#">
+                        <a class="navbar__link" href="#aboutId">
                             <span>JavaScript</span>
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="#">
+                        <a class="navbar__link" href="#versionId">
                             <span>VS</span>
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="#">
+                        <a class="navbar__link" href="#konsolId">
                             <span>Console</span>
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="#">
+                        <a class="navbar__link" href="#variableId">
                             <span>Variable</span>
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="#">
+                        <a class="navbar__link" href="#operatorsId">
                             <span>Operators</span>
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="#">
-                            <span>Dialog functions</span>
+                        <a class="navbar__link" href="#dialogId">
+                            <span>Alert...</span>
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="#">
+                        <a class="navbar__link" href="#dataId">
                             <span>Data types</span>
                         </a>
                     </li>
@@ -74,6 +75,7 @@
     </header>
 
 
+   <main>
     <section class="hero">
         <div class="container">
             <div class="hero__wrapper">
@@ -88,7 +90,7 @@
         </div>
     </section>
 
-    <section class="about" data-aos="fade-up" data-aos-duration="1000">
+    <section class="about" data-aos="fade-up" id="aboutId" data-aos-duration="1000">
         <div class="container">
             <div class="about__text" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <h2 data-aos="zoom-in" data-aos-duration="800">JavaScript</h2>
@@ -102,7 +104,7 @@
         </div>
     </section>
 
-    <section class="version" data-aos="fade-up">
+    <section class="version" id="versionId" data-aos="fade-up">
     <div class="container">
         <div class="version__text">
             <h2 data-aos="fade-right">JavaScript Tarixi va Yangilanishlar</h2>
@@ -142,7 +144,7 @@
     </div>
 </section>
 
-<section class="konsol">
+<section class="konsol" id="konsolId">
     <div class="container" data-aos="fade-up">
         <div class="konsol__text">
             <h2>console.log()</h2>
@@ -184,7 +186,7 @@
     </div>
 </section>
 
-<section class="variable" data-aos="fade-up" data-aos-duration="1000">
+<section class="variable" id="variableId" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="variable__image" data-aos="zoom-in" data-aos-duration="1000">
             <img src="./assets/variables.jpg" alt="JS image">
@@ -214,15 +216,104 @@
     </div>
 </section>
 
-<section class="operators">
+<section class="operators" id="operatorsId" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
-        
+        <div class="operators__text" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Operatorlar</h2>
+            <p>JavaScript-da operatorlar ma'lumotlarni manipulyatsiya qilish, hisoblash yoki taqqoslash uchun ishlatiladi. Ular turli maqsadlar uchun bir nechta turdagi operatorlarga ega.</p>
+            <h3>Arifmetik operatorlar</h3>
+            <p>Arifmetik operatorlar matematik amallarni bajarish uchun ishlatiladi:</p>
+            <ul class="operators__list">
+                <li data-aos="fade-up" data-aos-duration="800">1. Qo'shish (+): Ikkita qiymatni qo'shadi.</li>
+                <li data-aos="zoom-in" data-aos-duration="800"><h4>let sum = 5 + 3; // 8</h4></li>
+
+                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">2. Ayirish (-): Birinchi qiymatdan ikkinchi qiymatni ayiradi.</li>
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100"><h4>let difference = 5 - 3; // 2</h4></li>
+
+                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">3. Ko'paytirish (*): Ikkita qiymatni ko'paytiradi.</li>
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"><h4>let product = 5 * 3; // 15</h4></li>
+
+                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">4. Bo'lish (/): Birinchi qiymatni ikkinchi qiymatga bo'ladi.</li>
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300"><h4>let quotient = 15 / 3; // 5</h4></li>
+
+                <li data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">5. Qoldiq (%): Bo'linishdan qolgani beradi (modulus).</li>
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400"><h4>let remainder = 10 % 3; // 1</h4></li>
+            </ul>
+        </div>
     </div>
 </section>
+
+
+<section class="dialog" id="dialogId" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="dialog__text" data-aos="fade-right" data-aos-duration="1400">
+            <h2 data-aos="fade-left" data-aos-duration="1600">Alert, prompt va confirm</h2>
+            <p data-aos="fade-up" data-aos-duration="1800">JavaScript'dagi alert, prompt, va confirm funksiyalari...</p>
+            <ul class="dialog__list">
+                <li data-aos="fade-up" data-aos-duration="2000">1. alert() funksiyasi...</li>
+                <li data-aos="fade-up" data-aos-duration="2200">
+                    <h4>alert("Xush kelibsiz! Ushbu saytdan foydalanishni davom eting.");</h4>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="2400">2. prompt() funksiyasi...</li>
+                <li data-aos="fade-up" data-aos-duration="2600">
+                    <h4>let ism = prompt("Ismingiz nima?"); ...</h4>
+                </li>
+                <li data-aos="fade-up" data-aos-duration="2800">3. confirm() funksiyasi...</li>
+                <li data-aos="fade-up" data-aos-duration="3000">
+                    <h4>let davomEtish = confirm("Saytdan chiqmoqchimisiz?"); ...</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="data" id="dataId" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container" data-aos="fade-right" data-aos-duration="1000">
+        <div class="data__image" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="./assets/data_type.jpg" alt="JS image">
+        </div>
+
+        <div class="data__text" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Data Types</h2>
+            <p>
+                JavaScriptda ma'lumot turlari (data types) asosiy va muhim tushunchalardan biri bo'lib, ular o'zgaruvchilarga qanday turdagi qiymatlar berilishini belgilaydi.
+            </p>
+
+            <ul class="data__list">
+                <li>1. String – Matnni ifodalash uchun ishlatiladi. Matnlar qo’shtirnoq ("") yoki birtirnoq ('') ichida yoziladi.</li>
+                <li><h4>let text = "Salom, dunyo!";</h4></li>
+
+                <li>2. Number – Raqamlar va o'nli sonlarni ifodalash uchun ishlatiladi.</li>
+                <li><h4>let yosh = 25;</h4></li>
+                <li><h4>let pi = 3.14;</h4></li>
+
+                <li>3. Boolean – Faqat ikkita qiymatga ega: true yoki false. Shartlarni tekshirishda qo'llaniladi.</li>
+                <li><h4>let isStudent = true;</h4></li>
+
+                <li>4. Undefined – Qiymat berilmagan o'zgaruvchilar uchun ishlatiladi.</li>
+                <li><h4>let name;</h4></li>
+                <li><h4>console.log(name); // undefined</h4></li>
+
+                <li>5. Null – Bo’sh yoki qiymat mavjud emasligini bildirish uchun ishlatiladi.</li>
+                <li><h4>let response = null;</h4></li>
+
+                <li>6. Symbol – Unikal va o'zgarmas qiymatlar yaratish uchun ishlatiladi. Asosan ob'ektlarning o'ziga xos identifikatorlarini yaratishda qo'llaniladi.</li>
+                <li><h4>let uniqueId = Symbol('id');</h4></li>
+
+                <li>7. Object – Bir nechta qiymatlarni bitta o'zgaruvchiga bog'lash uchun ishlatiladi. Masalan, obyekt, massiv (array), va funksiyalar ham obyekt hisoblanadi.</li>
+                <li><h4>let user = { name: "Ali", age: 30 };</h4></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+   </main>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
